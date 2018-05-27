@@ -60,6 +60,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\color_click.cs" />
+    <Compile Include="Assets\ColorPicker\CameraBgColor.cs" />
+    <Compile Include="Assets\ColorPicker\ColorPicker.cs" />
+    <Compile Include="Assets\ColorPicker\DemoGUI_ColorPickerDemo.cs" />
+    <Compile Include="Assets\ColorPicker\DrawGUIOrderColorPicker.cs" />
+    <Compile Include="Assets\ColorPicker\ObjectColor.cs" />
+    <Compile Include="Assets\ColorPicker\PSColor.cs" />
+    <Compile Include="Assets\ColorSkies\Demo\Scripts\LookCamera.cs" />
+    <Compile Include="Assets\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
     <Compile Include="Assets\createobject.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Composition\OVRCameraComposition.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Composition\OVRComposition.cs" />
@@ -119,6 +127,7 @@
     <None Include="Assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />
     <None Include="Assets\Oculus\VR\Shaders\OVRColorRampAlpha.shader" />
     <None Include="Assets\Oculus\VR\Resources\Cubemap Blit.shader" />
+    <None Include="Assets\ColorPicker\license.txt" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlit.shader" />
     <None Include="Assets\Oculus\VR\Shaders\Unlit Crosshair.shader" />
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />

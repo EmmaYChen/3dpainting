@@ -178,3 +178,5 @@ d386064da6a705361dbf67feb94dbe26 Assembly-CSharp.dll:VRStandardAssets.Utils.VRDe
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VRStandardAssets.Utils.VRTrackingReset
 0638dc411945487ebf110613b88c0263 Assembly-CSharp.dll:VRStandardAssets.Utils.VRInput
 320b1dea36882b7d48cabbc3cacb8ac2 Assembly-CSharp.dll:.createobject
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.color_click
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UImanager
