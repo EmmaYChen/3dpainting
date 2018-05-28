@@ -10,7 +10,7 @@ public class UImanager : MonoBehaviour {
     void Start()
     {
         color_panel = GameObject.FindGameObjectWithTag("colorpanel");
-        color_panel.SetActive(false);
+        color_panel.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,6 +29,6 @@ public class UImanager : MonoBehaviour {
 
     public void Color_panel_showup()
     {
-        color_panel.SetActive(true);   
+        color_panel.gameObject.SetActive(true);   
     }
 }

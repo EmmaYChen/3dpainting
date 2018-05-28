@@ -236,6 +236,8 @@ public static class OVRInput
 		All                       = OVRPlugin.Controller.All,            ///< Represents the logical OR of all controllers.
 	}
 
+  
+
 	private static readonly float AXIS_AS_BUTTON_THRESHOLD = 0.5f;
 	private static readonly float AXIS_DEADZONE_THRESHOLD = 0.2f;
 	private static List<OVRControllerBase> controllers;
