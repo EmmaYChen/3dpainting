@@ -10,7 +10,7 @@
       <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
     </activity>
     <meta-data android:name="com.samsung.android.vr.application.mode" android:value="vr_only" />
-    <meta-data android:name="unity.build-id" android:value="f9ecb136-923b-4392-9652-9a4afd75d15b" />
+    <meta-data android:name="unity.build-id" android:value="8708ae36-710b-44fe-84a5-a090445992ec" />
     <meta-data android:name="unity.splash-mode" android:value="0" />
     <meta-data android:name="unity.splash-enable" android:value="False" />
   </application>

@@ -59,7 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\color_click.cs" />
     <Compile Include="Assets\ColorPicker\CameraBgColor.cs" />
     <Compile Include="Assets\ColorPicker\ColorPicker.cs" />
     <Compile Include="Assets\ColorPicker\DemoGUI_ColorPickerDemo.cs" />
@@ -68,7 +67,6 @@
     <Compile Include="Assets\ColorPicker\PSColor.cs" />
     <Compile Include="Assets\ColorSkies\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
-    <Compile Include="Assets\createobject.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Composition\OVRCameraComposition.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Composition\OVRComposition.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Composition\OVRCompositionUtil.cs" />
@@ -105,22 +103,28 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRMixedRealityCaptureSettings.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRModeParms.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRMonoscopic.cs" />
-    <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRPhysicsRaycaster.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRPhysicsRaycaster1.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRPlayerController.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRPointerEventData.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRProfiler.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRProgressIndicator.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRRaycaster.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRRayPointerEventData.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRRecord.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRResetOrientation.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRSceneSampleController.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
-    <Compile Include="Assets\Raycaster.cs" />
     <Compile Include="Assets\Script\caster.cs" />
+    <Compile Include="Assets\Script\color_click.cs" />
+    <Compile Include="Assets\Script\createobject.cs" />
+    <Compile Include="Assets\Script\NonUIInteraction.cs" />
+    <Compile Include="Assets\Script\Raycaster.cs" />
+    <Compile Include="Assets\Script\RayPointer.cs" />
+    <Compile Include="Assets\Script\UIInteraction.cs" />
+    <Compile Include="Assets\Script\UImanager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\UImanager.cs" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />
     <None Include="Assets\Oculus\VR\Shaders\OVRColorRampAlpha.shader" />

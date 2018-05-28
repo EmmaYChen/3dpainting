@@ -1,16 +1,15 @@
-/************************************************************************************
+﻿/************************************************************************************
 
-Copyright   :   Copyright 2017 Oculus VR, LLC. All Rights reserved.
+Copyright   :   Copyright 2014-Present Oculus VR, LLC. All Rights reserved.
 
-Licensed under the Oculus VR Rift SDK License Version 3.4.1 (the "License");
+Licensed under the Oculus VR Rift SDK License Version 3.2 (the "License");
 you may not use the Oculus VR Rift SDK except in compliance with the License,
 which is provided at the time of installation or download, or which
 otherwise accompanies this software in either electronic or hard copy form.
 
 You may obtain a copy of the License at
 
-https://developer.oculus.com/licenses/sdk-3.4.1
-
+http://www.oculusvr.com/licenses/LICENSE-3.2
 
 Unless required by applicable law or agreed to in writing, the Oculus VR SDK
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -29,18 +28,9 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 
-/// <summary>
-/// Extension of GraphicRaycaster to support ray casting with world space rays instead of just screen-space
-/// pointer positions
-/// </summary>
 [RequireComponent(typeof(Canvas))]
 public class OVRRaycaster : GraphicRaycaster, IPointerEnterHandler
 {
-    [Tooltip("A world space pointer for this canvas")]
-    public GameObject pointer;
-
-    public int sortOrder = 0;
-
     protected OVRRaycaster()
     { }
 
@@ -67,13 +57,6 @@ public class OVRRaycaster : GraphicRaycaster, IPointerEnterHandler
         }
     }
 
-    public override int sortOrderPriority
-    {
-        get
-        {
-            return sortOrder;
-        }
-    }
 
     /// <summary>
     /// For the given ray, find graphics on this canvas which it intersects and are not blocked by other
@@ -170,9 +153,10 @@ public class OVRRaycaster : GraphicRaycaster, IPointerEnterHandler
     /// <param name="resultAppendList"></param>
     public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
     {
-        if (eventData.IsVRPointer())
+        OVRRayPointerEventData rayPointerEventData = eventData as OVRRayPointerEventData;
+        if (rayPointerEventData != null)
         {
-            Raycast(eventData, resultAppendList, eventData.GetRay(), true);
+            Raycast(eventData, resultAppendList, rayPointerEventData.worldSpaceRay, true);
         }
     }
     /// <summary>
@@ -182,13 +166,10 @@ public class OVRRaycaster : GraphicRaycaster, IPointerEnterHandler
     /// <param name="resultAppendList"></param>
     public void RaycastPointer(PointerEventData eventData, List<RaycastResult> resultAppendList)
     {
-        if (pointer != null && pointer.activeInHierarchy)
-        {
-            Raycast(eventData, resultAppendList, new Ray(eventCamera.transform.position, (pointer.transform.position - eventCamera.transform.position).normalized), false);
-        }
+        
     }
 
-   
+  
     /// <summary>
     /// Perform a raycast into the screen and collect all graphics underneath it.
     /// </summary>
@@ -209,10 +190,10 @@ public class OVRRaycaster : GraphicRaycaster, IPointerEnterHandler
             Graphic graphic = foundGraphics[i];
 
             // -1 means it hasn't been processed by the canvas, which means it isn't actually drawn
-            if (graphic.depth == -1 || (pointer == graphic.gameObject))
+            if (graphic.depth == -1 )
                 continue;
             Vector3 worldPos;
-            if (RayIntersectsRectTransform(graphic.rectTransform, ray, out worldPos))
+            if (RayIntersectsRectTransform(graphic.rectTransform, ray, out worldPos) && eventCamera != null)
             {
                 //Work out where this is on the screen for compatibility with existing Unity UI code
                 Vector2 screenPos = eventCamera.WorldToScreenPoint(worldPos);
@@ -310,7 +291,8 @@ public class OVRRaycaster : GraphicRaycaster, IPointerEnterHandler
     
     public void OnPointerEnter(PointerEventData e)
     {
-        if (e.IsVRPointer())
+        PointerEventData ped = e as OVRRayPointerEventData;
+        if (ped != null)
         {
             // Gaze has entered this canvas. We'll make it the active one so that canvas-mouse pointer can be used.
             OVRInputModule inputModule = EventSystem.current.currentInputModule as OVRInputModule;
