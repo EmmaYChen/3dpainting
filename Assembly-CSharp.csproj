@@ -117,13 +117,18 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
     <Compile Include="Assets\Script\caster.cs" />
-    <Compile Include="Assets\Script\color_click.cs" />
     <Compile Include="Assets\Script\createobject.cs" />
     <Compile Include="Assets\Script\NonUIInteraction.cs" />
     <Compile Include="Assets\Script\Raycaster.cs" />
     <Compile Include="Assets\Script\RayPointer.cs" />
     <Compile Include="Assets\Script\UIInteraction.cs" />
     <Compile Include="Assets\Script\UImanager.cs" />
+    <Compile Include="Assets\Scripts\ColorHuePicker.cs" />
+    <Compile Include="Assets\Scripts\ColorIndicator.cs" />
+    <Compile Include="Assets\Scripts\ColorSaturationBrightnessPicker.cs" />
+    <Compile Include="Assets\Scripts\Draggable.cs" />
+    <Compile Include="Assets\Scripts\ExampleColorReceiver.cs" />
+    <Compile Include="Assets\Scripts\HSBColor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlitTransparent.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRChromaKey.cginc" />
@@ -132,13 +137,17 @@
     <None Include="Assets\ColorPicker\license.txt" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRUnlit.shader" />
     <None Include="Assets\Oculus\VR\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\Shaders\ColorHue.shader" />
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRCameraFrameLit.shader" />
     <None Include="Assets\Oculus\VR\Resources\Underlay Transparent Occluder.shader" />
     <None Include="Assets\Oculus\VR\Resources\Texture2D Blit.shader" />
+    <None Include="Assets\Shaders\ColorSaturationBrightness.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRCameraFrame.shader" />
     <None Include="Assets\Oculus\VR\Resources\OVRMRClipPlane.shader" />
+    <None Include="Assets\Shaders\SolidColor.shader" />
     <None Include="Assets\Oculus\VR\Resources\Underlay Impostor.shader" />
+    <None Include="Assets\readme.txt" />
     <None Include="Assets\Oculus\VR\Plugins\placeholder.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/chenyao/Documents/ee267project/3dpainiting/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
