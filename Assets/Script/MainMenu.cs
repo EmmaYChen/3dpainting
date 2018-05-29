@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
@@ -14,7 +13,6 @@ public class MainMenu : MonoBehaviour {
 		Debug.Log("Quit");
 		Application.Quit();
 	}
-
 	public void LoadGame(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 	}
