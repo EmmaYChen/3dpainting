@@ -774,6 +774,7 @@ GameObject:
   - component: {fileID: 702126198}
   - component: {fileID: 702126199}
   - component: {fileID: 702126203}
+  - component: {fileID: 702126204}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -990,6 +991,18 @@ MonoBehaviour:
     m_TypeName: RayPointer+SelectionCallback, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   joyPadClickButton: 8192
+--- !u!114 &702126204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702126197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62c7a4de05b7497a8b5d4a75c67309b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 0}
 --- !u!1 &756435032
 GameObject:
   m_ObjectHideFlags: 0

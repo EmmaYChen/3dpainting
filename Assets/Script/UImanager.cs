@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UImanager : MonoBehaviour {
     private GameObject color_panel;
@@ -27,6 +28,11 @@ public class UImanager : MonoBehaviour {
             Debug.Log("color button click");
 
         }
+
+        if (OVRInput.Get(OVRInput.Button.Two))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
     }
 
     public void Color_panel_showup()
@@ -39,4 +45,5 @@ public class UImanager : MonoBehaviour {
     {
         test.gameObject.SetActive(true);
     }
+
 }
