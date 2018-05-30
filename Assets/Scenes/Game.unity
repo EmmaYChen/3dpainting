@@ -775,6 +775,7 @@ GameObject:
   - component: {fileID: 702126199}
   - component: {fileID: 702126203}
   - component: {fileID: 702126204}
+  - component: {fileID: 702126205}
   m_Layer: 0
   m_Name: OVRCameraRig
   m_TagString: Untagged
@@ -1003,6 +1004,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test: {fileID: 0}
+--- !u!114 &702126205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702126197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ba2a90f5ae9451585746506fccd19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &756435032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1458,7 @@ GameObject:
   - component: {fileID: 1305493033}
   - component: {fileID: 1305493032}
   - component: {fileID: 1305493031}
+  - component: {fileID: 1305493034}
   m_Layer: 5
   m_Name: grab
   m_TagString: Untagged
@@ -1511,8 +1524,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: OnButtonClicked
+      - m_Target: {fileID: 1305493034}
+        m_MethodName: SetGrab
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1557,6 +1570,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305493029}
+--- !u!114 &1305493034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305493029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c280cb7f3f7f4551b57f5b69b52f660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1375737368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2054,11 @@ Prefab:
     - target: {fileID: 1150461584060438, guid: 836ca07fc69b4184ca14265c7d24030d, type: 2}
       propertyPath: m_Name
       value: Rock_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 64326202081095742, guid: 836ca07fc69b4184ca14265c7d24030d,
+        type: 2}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 836ca07fc69b4184ca14265c7d24030d, type: 2}
