@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/douphoton/Documents/Study/Courses/2018spring/EE267/project/pro/3dpainting/2.apk
+/Users/chenyao/Documents/GitHub/3dpainting/3.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
@@ -22,6 +22,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+ae329cc6fbca968224739aae197edeba Assembly-CSharp.dll:.GlobalVariable
 b699767c5ab236e9f017692892ababe5 Assembly-CSharp.dll:.RayPointer
 9e81ce4ad6c2e2946ac83c6b59fbf577 Assembly-CSharp.dll:VoxelBusters.RuntimeSerialization.Benchmark.Profiler
 bfddcc339fade781f72a7bb9403d51f3 Assembly-CSharp.dll:.OVRGazePointer
@@ -132,6 +133,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GrabObject
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.AssetStoreProductUtility.Demo.DemoGUIWindow
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.RuntimeSerialization.Demo.IRuntimeSerializableDemo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VoxelBusters.Utility.UnityGUI.MENU.GUIMenuBase
@@ -168,6 +170,7 @@ e260426351ec92be2f530452a4fbec58 Assembly-CSharp.dll:.OVROverlay
 553028ff2845bac843ab4c26e781c024 Assembly-CSharp.dll:.OVRProgressIndicator
 fd044a1720acfc095b3d34c48014e048 Assembly-CSharp.dll:.OVRPlatformMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VoxelBusters.Utility.UnityGUILayoutUtility
+b839c8bbad9464fd9087b56e5e6f0fa0 Assembly-CSharp.dll:.DataController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VoxelBusters.Utility.PlayerSettings
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 b9332c0eee630779376843b5343eb250 Assembly-CSharp.dll:TMPro.Examples.TMP_TextInfoDebugTool
@@ -218,6 +221,7 @@ b11448bc44f49db3e26525de9acc4a98 TextMeshPro-2017.3-Editor.dll:TMPro.EditorUtili
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.TMP_DigitValidator
 8535dae6224e7a25c4aaa54ab9b4f894 Assembly-CSharp.dll:.OVRScreenFade
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VoxelBusters.Utility.NativeBinding
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SetGrabState
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.TeleType
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.AssetStoreProductUtility.Demo.DemoMainMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ColorHuePicker

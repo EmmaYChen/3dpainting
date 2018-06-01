@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{652911FE-809B-AD81-00DF-325BE894C45C}</ProjectGuid>
+    <ProjectGuid>{C50B39A9-A4D6-C8EF-603C-522A058BFFD4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -69,12 +69,42 @@
     <Compile Include="Assets\Oculus\VR\Editor\OVRScreenshotWizard.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRManagerEditor.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Editor\AssetStoreProductInspector.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\GlobalDefines\Editor\GlobalDefinesManagerWindow.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\Utility\Editor\ShaderUtilityInspector.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\MiniJSON\MiniJSON.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXBuildFile.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXBuildPhase.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXDictionary.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXFileReference.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXGroup.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXList.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXObject.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXParser.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXProject.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXSortedDictionary.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\PBX Editor\PBXVariantGroup.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\XCBuildConfiguration.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\XCConfigurationList.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\XCMod.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\XCodePostProcess.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\Editor\XUPorter\XCProject.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\ArrayDrawer\Editor\ArrayDrawer.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\EnumMask\Editor\EnumMaskFieldDrawer.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\InspectorButton\Editor\InspectorButtonDrawer.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\OnValueChange\Editor\ExecuteOnValueChangeDrawer.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\Regex\Editor\RegexDrawer.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Editor\Helper\ArrayInspector.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Editor\Uitlity\UnityEditorUtility.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Demo\Scripts\DownloadTexture\Editor\DownloadTextureDemoInspector.cs" />
+    <Compile Include="Assets\VoxelBusters\Common\Utility\Zip\Editor\Zip.cs" />
+    <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Editor\Menu\ProductMenu.cs" />
     <None Include="Assets\Oculus\VR\Editor\AndroidManifest.OVRSubmission.xml" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/chenyao/Documents/ee267project/3dpainiting/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/chenyao/Documents/GitHub/3dpainting/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/chenyao/Documents/ee267project/3dpainiting/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/chenyao/Documents/GitHub/3dpainting/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -310,6 +340,12 @@
     <Reference Include="UnityEditor.OSXStandalone.Extensions">
       <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="TextMeshPro-2017.3-Editor">
+      <HintPath>/Users/chenyao/Documents/GitHub/3dpainting/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="TextMeshPro-2017.3-Runtime">
+      <HintPath>/Users/chenyao/Documents/GitHub/3dpainting/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/chenyao/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -361,7 +397,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{F5D11B5A-2715-E509-F933-BA946C900B3C}</Project>
+      <Project>{35CAF511-8DB1-F1AB-FD1C-EB754DFC5D2F}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

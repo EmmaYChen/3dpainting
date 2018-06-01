@@ -23,8 +23,7 @@ public class UImanager : MonoBehaviour {
         //if(color_button.onClick()){
             
         //}
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
-        {
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)){
             Debug.Log("color button click");
 
         }
@@ -35,15 +34,19 @@ public class UImanager : MonoBehaviour {
         }
     }
 
-    public void Color_panel_showup()
-    {
+    public void ColorModeOn(){
+        GlobalVariable.MODE = "color";
         color_panel.gameObject.SetActive(true);   
-         
     }
 
-    public void Shapes_panel_showup()
-    {
+    public void ShapeModeOn(){
+        GlobalVariable.MODE = "shape";
         test.gameObject.SetActive(true);
+    }
+
+    public void EraseModeOn(){
+        GlobalVariable.MODE = "eraser";
+        
     }
 
 }
