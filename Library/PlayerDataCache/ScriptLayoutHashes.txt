@@ -175,6 +175,7 @@ b839c8bbad9464fd9087b56e5e6f0fa0 Assembly-CSharp.dll:.DataController
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 b9332c0eee630779376843b5343eb250 Assembly-CSharp.dll:TMPro.Examples.TMP_TextInfoDebugTool
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ColorIndicator
+dc7c79d279c7db671b5343c1c88ec717 Assembly-CSharp.dll:.ColorManager
 f4bd1aee67eeef7953cce6c44588b3d7 TextMeshPro-2017.3-Runtime.dll:TMPro.TextContainer
 bf22e89fa4b77e86d45d7ae313079474 TextMeshPro-2017.3-Runtime.dll:TMPro.TextMeshPro
 bcada89394089914d10ff70647b120da TextMeshPro-2017.3-Runtime.dll:TMPro.TextMeshProUGUI
@@ -286,6 +287,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MainMenu
 d819f87e9ea4ab0887e8525364fd80c2 Assembly-CSharp.dll:VoxelBusters.Utility.DownloadTextureDemo
 a8de2ebcd0919346b063160595a39676 Assembly-CSharp.dll:.ColorPicker
+eb3c3b93da6c7f5e183169e89dc2fe18 Assembly-CSharp.dll:.ChangeColor
 48a9dee325686d1924a2646b71c83f08 Assembly-CSharp.dll:TMPro.Examples.Benchmark01
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 7e926316ce20e4d45cb9a9aebc6e79e9 Assembly-CSharp.dll:.OVRGridCube
@@ -308,5 +310,3 @@ a3683c9bae7b2031b9a73b24d52014d3 Assembly-CSharp.dll:.caster
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.Utility.GUIAlertDialog
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-dc7c79d279c7db671b5343c1c88ec717 Assembly-CSharp.dll:.ColorManager
-eb3c3b93da6c7f5e183169e89dc2fe18 Assembly-CSharp.dll:.ChangeColor
