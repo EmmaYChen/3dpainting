@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class GlobalVariable : MonoBehaviour
 {
-
+    static public Ray selectionRay;
+    public Color selectedColor;
+    //public GameObject test; 
     public bool interactWithNonUIObjects = true;
     public float rayLength = 500;
     public Transform trackingSpace = null;
     public LineRenderer lineRenderer = null;
     public UnityEngine.EventSystems.OVRInputModule inputModule = null;
+    public GameObject colorsphere;
 
     protected Transform lastHit = null;
     protected Transform triggerDown = null;
@@ -21,10 +24,11 @@ public class GlobalVariable : MonoBehaviour
 
     private GameObject selectedItem;
 
+
     // Use this for initialization
     void Start()
     {
-
+        colorsphere.SetActive(false);
         MODE = "None";
 
         if (inputModule != null){
@@ -98,13 +102,38 @@ public class GlobalVariable : MonoBehaviour
         }        
     }
 
+    void ColorInteraction (Ray pointer, RaycastHit hit, Color color){
+
+        if (activeController != OVRInput.Controller.None)
+        {
+             if (OVRInput.GetDown(joyPadClickButton, activeController)){
+                selectedItem = hit.collider.gameObject;
+                selectedItem.GetComponent<Renderer>().material.color = color;
+            }    
+        }
+
+    }
+
     void ProcessNonUIInteractions(Ray pointer)
     {
-        RaycastHit hit; 
-        if (Physics.Raycast(pointer, out hit, rayLength)){
-            if(MODE == "eraser" ){
+        RaycastHit hit;
+        if (Physics.Raycast(pointer, out hit, rayLength))
+        {
+            if (MODE == "eraser")
+            {
+                colorsphere.SetActive(false);
                 EraserInteraction(pointer, hit);
             }
+
+            if (MODE == "color"){
+                colorsphere.SetActive(true);
+                selectedColor = ChangeColor.sColor;
+                ColorInteraction(pointer, hit, selectedColor);
+            }
+            if (MODE == "shape"){
+                
+            }
+
         }
 
     }
@@ -112,7 +141,7 @@ public class GlobalVariable : MonoBehaviour
 
     void Update()
    {
-        Ray selectionRay = UpdateCastRayIfPossible();
+        selectionRay = UpdateCastRayIfPossible();
 
         if (interactWithNonUIObjects){
             ProcessNonUIInteractions(selectionRay);

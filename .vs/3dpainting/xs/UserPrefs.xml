@@ -1,9 +1,13 @@
-﻿<Properties StartupConfiguration="{F5D11B5A-2715-E509-F933-BA946C900B3C}|">
+﻿<Properties StartupConfiguration="{35CAF511-8DB1-F1AB-FD1C-EB754DFC5D2F}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UImanager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ColorManager.cs">
     <Files>
-      <File FileName="Assets/Script/GlobalVariable.cs" Line="112" Column="5" />
-      <File FileName="Assets/Script/UImanager.cs" Line="37" Column="13" />
+      <File FileName="Assets/Script/GlobalVariable.cs" Line="128" Column="35" />
+      <File FileName="Assets/Scripts/ColorManager.cs" Line="13" Column="6" />
+      <File FileName="Assets/Scripts/ChangeColor.cs" Line="21" Column="9" />
+      <File FileName="Assets/Script/UImanager.cs" Line="45" Column="6" />
+      <File FileName="Assets/Scripts/Draggable.cs" Line="34" Column="14" />
+      <File FileName="Assets/Scripts/ColorSaturationBrightnessPicker.cs" Line="21" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
