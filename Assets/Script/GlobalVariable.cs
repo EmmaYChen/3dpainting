@@ -6,13 +6,17 @@ public class GlobalVariable : MonoBehaviour
 {
     static public Ray selectionRay;
     public Color selectedColor;
-    //public GameObject test; 
+    public GameObject selectedShape;
+    public GameObject colorsphere;
+    public GameObject shapeindicator;
+    public Transform pshapeindicator;
+
     public bool interactWithNonUIObjects = true;
-    public float rayLength = 500;
+    public float rayLength = 1000;
     public Transform trackingSpace = null;
     public LineRenderer lineRenderer = null;
     public UnityEngine.EventSystems.OVRInputModule inputModule = null;
-    public GameObject colorsphere;
+
 
     protected Transform lastHit = null;
     protected Transform triggerDown = null;
@@ -117,23 +121,33 @@ public class GlobalVariable : MonoBehaviour
     void ProcessNonUIInteractions(Ray pointer)
     {
         RaycastHit hit;
-        if (Physics.Raycast(pointer, out hit, rayLength))
+
+        if (MODE == "eraser")
         {
-            if (MODE == "eraser")
+            colorsphere.SetActive(false);
+            if (Physics.Raycast(pointer, out hit, rayLength))
             {
-                colorsphere.SetActive(false);
                 EraserInteraction(pointer, hit);
             }
+        }
 
-            if (MODE == "color"){
-                colorsphere.SetActive(true);
+        if (MODE == "color")
+        {
+            colorsphere.SetActive(true);
+            if (Physics.Raycast(pointer, out hit, rayLength))
+            {
                 selectedColor = ChangeColor.sColor;
                 ColorInteraction(pointer, hit, selectedColor);
             }
-            if (MODE == "shape"){
+        }
+
+        if (MODE == "shape")
+        {
+            colorsphere.SetActive(false);
+            if (Physics.Raycast(pointer, out hit, rayLength))
+            {
                 
             }
-
         }
 
     }

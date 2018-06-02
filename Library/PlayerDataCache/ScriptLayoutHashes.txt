@@ -22,7 +22,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-a5b1c0ec42e87fdad29ea335bfedd86c Assembly-CSharp.dll:.GlobalVariable
+01aaebb184f46fac573fa13d2455c81f Assembly-CSharp.dll:.GlobalVariable
 b699767c5ab236e9f017692892ababe5 Assembly-CSharp.dll:.RayPointer
 9e81ce4ad6c2e2946ac83c6b59fbf577 Assembly-CSharp.dll:VoxelBusters.RuntimeSerialization.Benchmark.Profiler
 bfddcc339fade781f72a7bb9403d51f3 Assembly-CSharp.dll:.OVRGazePointer
@@ -296,7 +296,7 @@ eb3c3b93da6c7f5e183169e89dc2fe18 Assembly-CSharp.dll:.ChangeColor
 0e49d73d7346a68a4b49fc7864454b7c Assembly-CSharp.dll:UnityEngine.EventSystems.OVRInputModule
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ObjectColor
 584795015275d7765225ad872c0e8bd8 Assembly-CSharp.dll:.OVRGrabber
-41d25e4c7dd6e0bc89f9c2c4df151b82 Assembly-CSharp.dll:.UImanager
+9c454167f8b2c4e4dc1195412253a730 Assembly-CSharp.dll:.UImanager
 75cd0c6c744b9733ef29aa6c59ece2b1 Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
 6826e26f7cc718f870001971f13e79c7 Assembly-CSharp.dll:TMPro.TMP_TextEventHandler
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
@@ -310,3 +310,5 @@ a3683c9bae7b2031b9a73b24d52014d3 Assembly-CSharp.dll:.caster
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.Utility.GUIAlertDialog
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeShape
+18dfb1fae2a428102ed63cf7314bbf23 Assembly-CSharp.dll:.ShapeController

@@ -7,6 +7,11 @@ TagManager:
   - colorpanel
   - nonUI
   - colorsphere
+  - shapepanel
+  - shapeindicator
+  - cube
+  - cylinder
+  - sphere
   layers:
   - Default
   - TransparentFX

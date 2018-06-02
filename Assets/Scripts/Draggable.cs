@@ -6,6 +6,7 @@ public class Draggable : MonoBehaviour
 	public bool fixY;
 	public Transform thumb;
     public Transform minBound;
+
     //public GameObject test;
 
 
@@ -24,7 +25,7 @@ public class Draggable : MonoBehaviour
             if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)){
                 dragging = false;
                 RaycastHit hit;
-                if (GetComponent<Collider>().Raycast(ray, out hit, 500)){
+                if (GetComponent<Collider>().Raycast(ray, out hit, 1000)){
                     dragging = true;
                 }
             }
@@ -33,7 +34,7 @@ public class Draggable : MonoBehaviour
             if (dragging && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
             {
                 RaycastHit hit;
-                if (GetComponent<Collider>().Raycast(ray, out hit, 500))
+                if (GetComponent<Collider>().Raycast(ray, out hit, 1000))
                 {
                     dragging = true;
                     var point = hit.point;

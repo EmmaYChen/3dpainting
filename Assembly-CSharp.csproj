@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ChangeShape.cs" />
     <Compile Include="Assets\ColorPicker\CameraBgColor.cs" />
     <Compile Include="Assets\ColorPicker\ColorPicker.cs" />
     <Compile Include="Assets\ColorPicker\DemoGUI_ColorPickerDemo.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\Scripts\ExampleColorReceiver.cs" />
     <Compile Include="Assets\Scripts\HSBColor.cs" />
+    <Compile Include="Assets\ShapeController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
