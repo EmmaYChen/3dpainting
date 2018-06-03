@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,6 +29,8 @@ public class GlobalVariable : MonoBehaviour
     private Vector2 position;
     private bool rayLengthUp = false;
     private bool rayLengthDown = false;
+    private Vector3 previousPosition;
+    private float distance;
     //private GameObject test;
 
 
@@ -129,6 +131,43 @@ public class GlobalVariable : MonoBehaviour
         }        
     }
 
+    void GrabInteraction(Ray pointer, RaycastHit hit){
+        
+        if (activeController != OVRInput.Controller.None){
+
+            if (!OVRInput.Get(joyPadClickButton, activeController))
+            {
+               previousPosition = hit.point;
+               distance = (hit.point -  pointer.origin).magnitude;
+            }
+            else
+            {
+                selectedItem = hit.collider.gameObject;
+                selectedItem.transform.Translate(pointer.GetPoint(distance) - previousPosition);
+                distance = (hit.point -  pointer.origin).magnitude;
+                previousPosition = hit.point;
+
+                position = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad, OVRInput.Controller.RTrackedRemote);
+                if (position.y > 0.71 && (position.x < 0.7 || position.x > -0.7))
+                {
+                    selectedItem.transform.Translate(pointer.direction*2.0F);
+                }
+                if (position.y < -0.71 && (position.x < 0.7 || position.x > -0.7))
+                {
+                    selectedItem.transform.Translate(-pointer.direction*2.0F);
+                }
+                if (position.x < -0.71 && (position.y < 0.7 || position.y > -0.7))
+                {
+                    selectedItem.transform.localScale -= new Vector3(1.0F,1.0F,1.0F);
+                }
+                if (position.x > 0.71 && (position.y < 0.7 || position.y > -0.7))
+                {
+                    selectedItem.transform.localScale += new Vector3(1.0F,1.0F,1.0F);
+                }
+            }  
+        }        
+    }
+
     void ColorInteraction (Ray pointer, RaycastHit hit, Color color){
 
         if (activeController != OVRInput.Controller.None)
@@ -177,6 +216,13 @@ public class GlobalVariable : MonoBehaviour
 
         }
 
+        if (MODE == "grab")
+        {
+            if (Physics.Raycast(pointer, out hit, rayLength))
+            {
+                GrabInteraction(pointer, hit);
+            }
+        }
     }
 
 

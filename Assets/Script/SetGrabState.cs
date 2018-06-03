@@ -7,12 +7,6 @@ public class SetGrabState : MonoBehaviour {
 
 	public void SetGrab()
 	{
-		if (GlobalVariable.MODE == "Grab_On"){
-			GlobalVariable.MODE = "Grab_Off";
-		}
-		else
-		{
-			GlobalVariable.MODE = "Grab_On";
-		}
+		GlobalVariable.MODE = "grab";
 	}
 }

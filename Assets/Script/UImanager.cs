@@ -46,4 +46,11 @@ public class UImanager : MonoBehaviour {
         
     }
 
+    public void GrabModeOn(){
+        GlobalVariable.MODE = "grab";
+        color_panel.gameObject.SetActive(false);  
+        shape_panel.gameObject.SetActive(false);
+        
+    }
+
 }

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/chenyao/Documents/GitHub/3dpainting/4.apk
+/Users/douphoton/Documents/Study/Courses/2018spring/EE267/project/3dpainting/1.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
@@ -258,6 +258,7 @@ ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRChromaticAberration
 3390da0fa445ab5d676b24efb56cf5c0 Assembly-CSharp.dll:.OVRSceneSampleController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:VoxelBusters.Utility.Demo.JSONDemo
 62229a3e4d53ca59bec192e89627ed52 Assembly-CSharp.dll:TMPro.Examples.CameraController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeShape
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 f02726adeff0a3ec5905565234b372da UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -273,6 +274,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 f76d22af20807541fdf3a4d6dee7eece Assembly-CSharp.dll:.SkyboxChanger
 537843cf8c7f8ab266c7cd1191ca22fb Assembly-CSharp.dll:VoxelBusters.Utility.PromptWindow
+18dfb1fae2a428102ed63cf7314bbf23 Assembly-CSharp.dll:.ShapeController
 755b51582d06796b3a87c9b0119c1581 Assembly-CSharp.dll:.UIInteraction
 f0f0ab6b8a39d0572cfa4ea315d84fbf Assembly-CSharp.dll:TMPro.Examples.Benchmark04
 25365ec66501498d52d11616553a9368 Assembly-CSharp.dll:.Readme
@@ -310,5 +312,3 @@ a3683c9bae7b2031b9a73b24d52014d3 Assembly-CSharp.dll:.caster
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.Utility.GUIAlertDialog
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeShape
-18dfb1fae2a428102ed63cf7314bbf23 Assembly-CSharp.dll:.ShapeController
