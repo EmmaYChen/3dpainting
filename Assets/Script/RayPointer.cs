@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public class RayPointer : MonoBehaviour {
+    
+
     [System.Serializable]
     public class HoverCallback : UnityEvent<Transform> { }
     [System.Serializable]
@@ -28,8 +30,13 @@ public class RayPointer : MonoBehaviour {
     protected OVRInput.Controller activeController = OVRInput.Controller.RTrackedRemote;
     public OVRInput.Button joyPadClickButton = OVRInput.Button.PrimaryIndexTrigger;
 
+
     protected Transform lastHit = null;
     protected Transform triggerDown = null;
+
+    private Vector2 position;
+    private bool rayLengthUp = false;
+    private bool rayLengthDown = false;
 
     void Awake () {
         if (inputModule != null) {
@@ -122,7 +129,21 @@ public class RayPointer : MonoBehaviour {
             Matrix4x4 localToWorld = trackingSpace.localToWorldMatrix;
             Vector3 worldStartPoint = localToWorld.MultiplyPoint(localStartPoint);
             Vector3 worldOrientation = localToWorld.MultiplyVector(orientation * Vector3.forward);
-            
+
+            if(GlobalVariable.MODE == "shape" || GlobalVariable.MODE == "drag"){
+                position = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad, OVRInput.Controller.RTrackedRemote);
+                if(position.y > 0){
+                    rayLengthUp = true;
+                    rayLength += 100;
+                }
+                if (position.y < 0)
+                {
+                    rayLengthDown = true;
+                    rayLength += 100;
+                }
+            } else {
+                rayLength = 1000;
+            }
             if (lineRenderer != null) {
                 lineRenderer.SetPosition(0, worldStartPoint);
                 lineRenderer.SetPosition(1, worldStartPoint + worldOrientation * rayLength);

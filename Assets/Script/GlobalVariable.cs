@@ -6,10 +6,9 @@ public class GlobalVariable : MonoBehaviour
 {
     static public Ray selectionRay;
     public Color selectedColor;
-    public GameObject selectedShape;
+    private GameObject selectedShape;
     public GameObject colorsphere;
     public GameObject shapeindicator;
-    public Transform pshapeindicator;
 
     public bool interactWithNonUIObjects = true;
     public float rayLength = 1000;
@@ -27,11 +26,16 @@ public class GlobalVariable : MonoBehaviour
     static public string MODE;
 
     private GameObject selectedItem;
+    private Vector2 position;
+    private bool rayLengthUp = false;
+    private bool rayLengthDown = false;
+    //private GameObject test;
 
 
     // Use this for initialization
     void Start()
     {
+        shapeindicator.SetActive(false);
         colorsphere.SetActive(false);
         MODE = "None";
 
@@ -79,6 +83,25 @@ public class GlobalVariable : MonoBehaviour
             Vector3 worldStartPoint = localToWorld.MultiplyPoint(localStartPoint);
             Vector3 worldOrientation = localToWorld.MultiplyVector(orientation * Vector3.forward);
 
+            if (GlobalVariable.MODE == "shape" || GlobalVariable.MODE == "drag")
+            {
+                position = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad, OVRInput.Controller.RTrackedRemote);
+                if (position.y > 0)
+                {
+
+                    rayLengthUp = true;
+                    rayLength += 100;
+                }
+                if (position.y < 0)
+                {
+                    rayLengthDown = true;
+                    rayLength += 100;
+                }
+            }
+            else
+            {
+                rayLength = 1000;
+            }
             if (lineRenderer != null)
             {
                 lineRenderer.SetPosition(0, worldStartPoint);
@@ -118,12 +141,17 @@ public class GlobalVariable : MonoBehaviour
 
     }
 
+    void ShapeInteraction(Ray pointer){
+        
+    }
+
     void ProcessNonUIInteractions(Ray pointer)
     {
         RaycastHit hit;
 
         if (MODE == "eraser")
         {
+            shapeindicator.SetActive(false);
             colorsphere.SetActive(false);
             if (Physics.Raycast(pointer, out hit, rayLength))
             {
@@ -133,6 +161,7 @@ public class GlobalVariable : MonoBehaviour
 
         if (MODE == "color")
         {
+            shapeindicator.SetActive(false);
             colorsphere.SetActive(true);
             if (Physics.Raycast(pointer, out hit, rayLength))
             {
@@ -143,11 +172,9 @@ public class GlobalVariable : MonoBehaviour
 
         if (MODE == "shape")
         {
+            shapeindicator.SetActive(true);
             colorsphere.SetActive(false);
-            if (Physics.Raycast(pointer, out hit, rayLength))
-            {
-                
-            }
+
         }
 
     }

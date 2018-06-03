@@ -12,6 +12,7 @@ TagManager:
   - cube
   - cylinder
   - sphere
+  - test
   layers:
   - Default
   - TransparentFX

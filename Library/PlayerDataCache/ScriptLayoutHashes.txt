@@ -22,7 +22,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-01aaebb184f46fac573fa13d2455c81f Assembly-CSharp.dll:.GlobalVariable
+19118d9f9dad982fb9e9bde7189679ec Assembly-CSharp.dll:.GlobalVariable
 b699767c5ab236e9f017692892ababe5 Assembly-CSharp.dll:.RayPointer
 9e81ce4ad6c2e2946ac83c6b59fbf577 Assembly-CSharp.dll:VoxelBusters.RuntimeSerialization.Benchmark.Profiler
 bfddcc339fade781f72a7bb9403d51f3 Assembly-CSharp.dll:.OVRGazePointer

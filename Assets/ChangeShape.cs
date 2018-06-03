@@ -20,12 +20,11 @@ public class ChangeShape : MonoBehaviour {
             if (!instantiated)
             {
                 newObject = Instantiate(selectedShape, this.transform.position, this.transform.rotation);
-                newObject.transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
+                newObject.transform.localScale = new Vector3(0.025f, 0.025f, 0.025f);
                 newObject.transform.parent = this.transform;
                 instantiated = true;
                 lastselectedShape = selectedShape;
             }
-          
         }
 	}
 }
