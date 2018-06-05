@@ -178,6 +178,11 @@ public class GlobalVariable : MonoBehaviour
     void CopyInteraction(Ray pointer, RaycastHit hit){
         
         if (activeController != OVRInput.Controller.None){
+            if (OVRInput.GetDown(joyPadClickButton, activeController))
+            {
+                GameObject CopyItem = hit.collider.gameObject;
+                newObject = Instantiate(CopyItem);
+            }
 
             if (!OVRInput.Get(joyPadClickButton, activeController))
             {
@@ -207,6 +212,42 @@ public class GlobalVariable : MonoBehaviour
                 if (position.x > 0.71 && (position.y < 0.7 || position.y > -0.7))
                 {
                     selectedItem.transform.localScale += new Vector3(1.0F,1.0F,1.0F);
+                }
+            }  
+        }        
+    }
+
+    void ScaleInteraction(Ray pointer, RaycastHit hit){
+        
+        if (activeController != OVRInput.Controller.None){
+
+            if (OVRInput.Get(joyPadClickButton, activeController))
+            {
+                selectedItem = hit.collider.gameObject;
+                position = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad, OVRInput.Controller.RTrackedRemote);
+                if (position.y > 0.71 && (position.x < 0.7 || position.x > -0.7))
+                {
+                    selectedItem.transform.localScale += new Vector3(0.0F,1.0F,0.0F);
+                }
+                if (position.y < -0.71 && (position.x < 0.7 || position.x > -0.7))
+                {
+                    selectedItem.transform.localScale -= new Vector3(0.0F,1.0F,0.0F);
+                }
+                if (position.x < -0.71 && (position.y < 0.7 || position.y > -0.7))
+                {
+                    selectedItem.transform.localScale -= new Vector3(1.0F,0.0F,0.0F);
+                }
+                if (position.x > 0.71 && (position.y < 0.7 || position.y > -0.7))
+                {
+                    selectedItem.transform.localScale += new Vector3(1.0F,0.0F,0.0F);
+                }
+                if (position.x+0.1f < position.y && position.y < 0.7 && position.x > -0.7)
+                {
+                    selectedItem.transform.localScale += new Vector3(0.0F,0.0F,1.0F);
+                }
+                if (position.x > position.y+0.1f && position.x < 0.7 && position.y > -0.7)
+                {
+                    selectedItem.transform.localScale -= new Vector3(0.0F,0.0F,1.0F);
                 }
             }  
         }        
@@ -268,6 +309,14 @@ public class GlobalVariable : MonoBehaviour
             if (Physics.Raycast(pointer, out hit, rayLength))
             {
                 CopyInteraction(pointer, hit);
+            }
+        }
+
+        if (MODE == "scale")
+        {
+            if (Physics.Raycast(pointer, out hit, rayLength))
+            {
+                ScaleInteraction(pointer, hit);
             }
         }
 

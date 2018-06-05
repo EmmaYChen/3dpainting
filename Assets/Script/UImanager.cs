@@ -60,4 +60,11 @@ public class UImanager : MonoBehaviour {
         
     }
 
+    public void ScaleModeOn(){
+        GlobalVariable.MODE = "scale";
+        color_panel.gameObject.SetActive(false);  
+        shape_panel.gameObject.SetActive(false);
+        
+    }
+
 }
