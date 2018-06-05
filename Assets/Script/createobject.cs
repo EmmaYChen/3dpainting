@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class createobject : MonoBehaviour {
 
-    public GameObject cube;
-
+    private GameObject selectedShape;
+    private GameObject lastselectedShape;
+    private GameObject newObject;
+    private bool instantiated = false;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +30,23 @@ public class createobject : MonoBehaviour {
         //    Debug.Log("create an cube");
         //    Instantiate(cube, transform.position, transform.rotation);
         //}
+        if(GlobalVariable.MODE == "shape1"){
+         
+            selectedShape = ShapeController.shape;
+            if (lastselectedShape && selectedShape != lastselectedShape){
+                Destroy(newObject);
+                instantiated = false;
+            } 
+            if (!instantiated)
+            {
 
+                newObject = Instantiate(selectedShape, this.transform.position,this.transform.rotation);
+                newObject.transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
+                newObject.transform.parent = this.transform;
+                instantiated = true;
+                lastselectedShape = selectedShape;
+            }
+        }
 
 
 

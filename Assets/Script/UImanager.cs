@@ -53,4 +53,11 @@ public class UImanager : MonoBehaviour {
         
     }
 
+    public void CopyModeOn(){
+        GlobalVariable.MODE = "copy";
+        color_panel.gameObject.SetActive(false);  
+        shape_panel.gameObject.SetActive(false);
+        
+    }
+
 }

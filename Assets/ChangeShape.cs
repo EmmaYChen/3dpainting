@@ -8,9 +8,10 @@ public class ChangeShape : MonoBehaviour {
     private GameObject lastselectedShape;
     private GameObject newObject;
     private bool instantiated = false;
-
+   // public Transform obposition;
+ 
 	void Update () {
-        if(GlobalVariable.MODE == "shape"){
+        if(GlobalVariable.MODE == "shape1"){
          
             selectedShape = ShapeController.shape;
             if (lastselectedShape && selectedShape != lastselectedShape){
@@ -19,9 +20,10 @@ public class ChangeShape : MonoBehaviour {
             } 
             if (!instantiated)
             {
-                newObject = Instantiate(selectedShape, this.transform.position, this.transform.rotation);
-                newObject.transform.localScale = new Vector3(0.025f, 0.025f, 0.025f);
-                newObject.transform.parent = this.transform;
+                Vector3 Pos = new Vector3(-6f,10f,-6f);
+                newObject = Instantiate(selectedShape, this.transform.position,this.transform.rotation);
+                newObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+               // newObject.transform.parent = this.transform;
                 instantiated = true;
                 lastselectedShape = selectedShape;
             }

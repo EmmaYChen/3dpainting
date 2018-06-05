@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShapeController : MonoBehaviour {
     static public GameObject shape;
     public GameObject sShape;
+    private GameObject newObject;
 
     private Ray ray;
 
@@ -34,6 +35,8 @@ public class ShapeController : MonoBehaviour {
     public void OnShapeButtonClick(){
         if (GlobalVariable.MODE == "shape"){
             shape = sShape;
+            newObject = Instantiate(shape, new Vector3(25f,295f, -38f),Quaternion.identity);
+        	newObject.transform.localScale = new Vector3(50f, 50f, 50f);
         }
     }
 }
