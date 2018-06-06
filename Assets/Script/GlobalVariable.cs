@@ -221,6 +221,52 @@ public class GlobalVariable : MonoBehaviour
         }        
     }
 
+    //void BrushInteraction(Ray pointer, RaycastHit hit)
+    //{
+
+    //    if (activeController != OVRInput.Controller.None)
+    //    {
+    //        if (OVRInput.GetDown(joyPadClickButton, activeController))
+    //        {
+    //            GameObject mother;
+    //            GameObject CopyItem = hit.collider.gameObject;
+    //            newObject = Instantiate(CopyItem);
+    //            selectedItem = newObject;
+    //        }
+
+    //        if (!OVRInput.Get(joyPadClickButton, activeController))
+    //        {
+    //            previousPosition = hit.point;
+    //            distance = (hit.point - pointer.origin).magnitude;
+    //        }
+    //        else
+    //        {
+
+    //            selectedItem.transform.Translate(pointer.GetPoint(distance) - previousPosition);
+    //            distance = (hit.point - pointer.origin).magnitude;
+    //            previousPosition = hit.point;
+
+    //            position = OVRInput.Get(OVRInput.Axis2D.PrimaryTouchpad, OVRInput.Controller.RTrackedRemote);
+    //            if (position.y > 0.71 && (position.x < 0.7 || position.x > -0.7))
+    //            {
+    //                selectedItem.transform.Translate(pointer.direction * 2.0F);
+    //            }
+    //            if (position.y < -0.71 && (position.x < 0.7 || position.x > -0.7))
+    //            {
+    //                selectedItem.transform.Translate(-pointer.direction * 2.0F);
+    //            }
+    //            if (position.x < -0.71 && (position.y < 0.7 || position.y > -0.7))
+    //            {
+    //                selectedItem.transform.localScale -= new Vector3(1.0F, 1.0F, 1.0F);
+    //            }
+    //            if (position.x > 0.71 && (position.y < 0.7 || position.y > -0.7))
+    //            {
+    //                selectedItem.transform.localScale += new Vector3(1.0F, 1.0F, 1.0F);
+    //            }
+    //        }
+    //    }
+    //}
+
     void ScaleInteraction(Ray pointer, RaycastHit hit){
         
         if (activeController != OVRInput.Controller.None){
@@ -324,6 +370,8 @@ public class GlobalVariable : MonoBehaviour
                 ScaleInteraction(pointer, hit);
             }
         }
+
+        // 
     }
 
 
