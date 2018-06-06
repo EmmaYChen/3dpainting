@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -141,7 +141,10 @@ public class GlobalVariable : MonoBehaviour
     void GrabInteraction(Ray pointer, RaycastHit hit){
         
         if (activeController != OVRInput.Controller.None){
-
+            if (OVRInput.GetDown(joyPadClickButton, activeController))
+            {
+                selectedItem = hit.collider.gameObject;
+            }
             if (!OVRInput.Get(joyPadClickButton, activeController))
             {
                previousPosition = hit.point;
@@ -149,7 +152,7 @@ public class GlobalVariable : MonoBehaviour
             }
             else
             {
-                selectedItem = hit.collider.gameObject;
+                
                 selectedItem.transform.Translate(pointer.GetPoint(distance) - previousPosition);
                 distance = (hit.point -  pointer.origin).magnitude;
                 previousPosition = hit.point;
@@ -182,6 +185,7 @@ public class GlobalVariable : MonoBehaviour
             {
                 GameObject CopyItem = hit.collider.gameObject;
                 newObject = Instantiate(CopyItem);
+                selectedItem = newObject;
             }
 
             if (!OVRInput.Get(joyPadClickButton, activeController))
@@ -191,7 +195,7 @@ public class GlobalVariable : MonoBehaviour
             }
             else
             {
-                selectedItem = hit.collider.gameObject;
+                
                 selectedItem.transform.Translate(pointer.GetPoint(distance) - previousPosition);
                 distance = (hit.point -  pointer.origin).magnitude;
                 previousPosition = hit.point;
@@ -235,13 +239,13 @@ public class GlobalVariable : MonoBehaviour
                 }
                 if (position.x < -0.71 && (position.y < 0.7 || position.y > -0.7))
                 {
-                    selectedItem.transform.localScale -= new Vector3(1.0F,0.0F,0.0F);
+                    selectedItem.transform.localScale -= new Vector3(1.0F,0.0F,1.0F);
                 }
                 if (position.x > 0.71 && (position.y < 0.7 || position.y > -0.7))
                 {
-                    selectedItem.transform.localScale += new Vector3(1.0F,0.0F,0.0F);
+                    selectedItem.transform.localScale += new Vector3(1.0F,0.0F,1.0F);
                 }
-                if (position.x+0.1f < position.y && position.y < 0.7 && position.x > -0.7)
+               /* if (position.x+0.1f < position.y && position.y < 0.7 && position.x > -0.7)
                 {
                     selectedItem.transform.localScale += new Vector3(0.0F,0.0F,1.0F);
                 }
@@ -249,6 +253,7 @@ public class GlobalVariable : MonoBehaviour
                 {
                     selectedItem.transform.localScale -= new Vector3(0.0F,0.0F,1.0F);
                 }
+                */
             }  
         }        
     }
@@ -296,7 +301,7 @@ public class GlobalVariable : MonoBehaviour
 
         
 
-        if (MODE == "grab")
+        if (MODE == "grab" || MODE == "shape" )
         {
             if (Physics.Raycast(pointer, out hit, rayLength))
             {
@@ -319,8 +324,6 @@ public class GlobalVariable : MonoBehaviour
                 ScaleInteraction(pointer, hit);
             }
         }
-
-
     }
 
 

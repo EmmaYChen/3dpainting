@@ -33,7 +33,7 @@ public class ShapeController : MonoBehaviour {
 	//}
 
     public void OnShapeButtonClick(){
-        if (GlobalVariable.MODE == "shape"){
+        if (GlobalVariable.MODE == "shape" || GlobalVariable.MODE == "grab"){
             shape = sShape;
             newObject = Instantiate(shape, new Vector3(25f,295f, -38f),Quaternion.identity);
         	newObject.transform.localScale = new Vector3(50f, 50f, 50f);

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/douphoton/Documents/Study/Courses/2018spring/EE267/project/3dpainting/1.apk
+/Users/chenyao/Documents/GitHub/3dpainting/5.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
@@ -312,3 +312,4 @@ a3683c9bae7b2031b9a73b24d52014d3 Assembly-CSharp.dll:.caster
 2159c3be11323db25178c80c736b014a Assembly-CSharp.dll:VoxelBusters.Utility.GUIAlertDialog
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:PrimitivePlus.PrimitivePlusMaterial

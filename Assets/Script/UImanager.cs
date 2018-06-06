@@ -49,22 +49,30 @@ public class UImanager : MonoBehaviour {
     public void GrabModeOn(){
         GlobalVariable.MODE = "grab";
         color_panel.gameObject.SetActive(false);  
-        shape_panel.gameObject.SetActive(false);
+        shape_panel.gameObject.SetActive(true);
         
     }
 
     public void CopyModeOn(){
         GlobalVariable.MODE = "copy";
         color_panel.gameObject.SetActive(false);  
-        shape_panel.gameObject.SetActive(false);
+        shape_panel.gameObject.SetActive(true);
         
     }
 
     public void ScaleModeOn(){
         GlobalVariable.MODE = "scale";
         color_panel.gameObject.SetActive(false);  
-        shape_panel.gameObject.SetActive(false);
+        shape_panel.gameObject.SetActive(true);
         
+    }
+
+    public void BrushModeOn()
+    {
+        GlobalVariable.MODE = "brush";
+        color_panel.gameObject.SetActive(false);
+        shape_panel.gameObject.SetActive(true);
+
     }
 
 }

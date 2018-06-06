@@ -68,6 +68,8 @@
     <Compile Include="Assets\Oculus\VR\Editor\OVRPluginUpdaterStub.cs" />
     <Compile Include="Assets\Oculus\VR\Editor\OVRScreenshotWizard.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRManagerEditor.cs" />
+    <Compile Include="Assets\PrimitivePlus\Editor\PrimitivePlusMaterialEditor.cs" />
+    <Compile Include="Assets\PrimitivePlus\Editor\PrimitivePlusMenuItems.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Editor\AssetStoreProductInspector.cs" />
     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\GlobalDefines\Editor\GlobalDefinesManagerWindow.cs" />

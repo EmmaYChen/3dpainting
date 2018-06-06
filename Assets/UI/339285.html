@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>hand图标,手图标,扁平化图像处理软件中的绘图工具图标,PNG图标下载 - 我的PNG图标网</title>
+    <link rel="dns-prefetch" href="http://pnga.mypng.cn">
+    <link rel="dns-prefetch" href="http://pngb.mypng.cn">
+    <link rel="dns-prefetch" href="http://pngc.mypng.cn">
+    <link rel="dns-prefetch" href="http://s.mypng.cn">
+    <meta name="keywords" content="hand图标,手图标,PNG图标下载" />
+    <meta name="description" content="hand图标,手图标,扁平化图像处理软件中的绘图工具图标，PNG图标尺寸512x512PX" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="http://s.mypng.cn/css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://s.mypng.cn/js/jquery.cookie.js"></script>
+    <script language="javascript">
+        var lbg = $.cookie("mypng_bg");
+        lbg = !lbg ? "bg-none": lbg;
+        $(function(){
+            $(".search-input").focus();
+            $(".png-list li").hover(function(){
+                $(this).find(".png").show();
+                $(this).addClass("hover");
+            },function(){
+                $(this).find(".png").hide();
+                $(this).removeClass("hover");
+            });
+            $(".bg-click").click(function(){
+                $(this).addClass("cur").siblings().removeClass("cur");
+                $(".thumb,.view-thumb,.png-list").removeClass(lbg).addClass($(this).attr("data-bg"));
+                lbg = $(this).attr("data-bg");
+                $.cookie("mypng_bg", lbg);
+            });
+            $('#dsize').bind('keypress',function(event){
+                if(event.keyCode == "13") download();
+            });
+            var tagv = $(".tag-size").attr("data-value");
+            $(".tag-size").val(tagv).bind('keypress', function(event){
+                if(event.keyCode == "13") addtag();
+            }).click(function(){
+                if($(this).val() == tagv) $(this).val("");
+            }).blur(function(){
+                if($(this).val() == "") $(this).val(tagv);
+            });
+
+        });
+        function download(){
+            var size = $("#dsize").val();
+            if(!size) return false;
+            window.location.href = "/download/339285?size="+size+"x"+size;
+        }
+        function addtag(){
+            var tag = $(".tag-size").val();
+            tag = $.trim(tag);
+            if(!tag || tag == $(".tag-size").attr("data-value")){
+                $(".tag-size").click().focus(); return;
+            }
+            $.ajax({
+                url: "?action=addtag",
+                dataType: "json",
+                type: "post",
+                data: {tagv: tag},
+                success: function(data){
+                    $(".tag-info").html(data.info).addClass("tag-add-ok").removeClass("tag-add-faild");
+                    $(".tag-size").val("");
+                },
+                error: function(){
+                    $(".tag-info").html("哦哦，抱歉！标签提交失败。").addClass("tag-add-faild").removeClass("tag-add-ok");
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="wrap-box search-wrap">
+    <div class="logo-div">
+        <a href="/" title="我的PNG图标网"><img src="http://s.mypng.cn/images/logo.gif" alt="我的PNG图标网|MyPNG.cn" /></a>
+    </div>
+    <div class="tsearch-box">
+        <form method="get" action="/so/">
+            <input type="text" class="search-input" value="" maxlength="100" name="q" id="q" /><span class="btn-span"><button type="submit" class="search-button">搜索我的PNG</button></span>
+        </form>
+        <p class="tips">在 336,497 个图标中</p>
+    </div>
+    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></div>
+</div>
+<div class="wrap-box">
+    <ul class="nav">
+        <li><a href="/" title="PNG图标网首页">图标网首页</a></li>
+        <li><a href="/classic/" title="图标集">图标集</a></li>
+        <li><a href="/top/" title="图标榜">图标榜</a></li>
+        <li><a href="/tags/" title="标签墙">标签墙</a></li>
+    </ul>
+</div>
+<div class="wrap-box">
+    <div class="view-box">
+        <div class="view-left">
+            <div class="view-thumb">
+               <a href="http://pngc.mypng.cn/2224/23-hand-tool.png" title="hand图标,手图标" target="_blank"><img src="http://pngc.mypng.cn/2224/23-hand-tool.png.1.png" /></a>
+            </div>
+            <a class="download-a" title="点击下载PNG原始图标" href="/download/339285">下载PNG图标（9.83KB）</a>
+        </div>
+        <div class="view-right">
+            <h1>hand图标,手图标,扁平化图像处理软件中的绘图工具图标</h1>
+            <p>热度：483 ℃</p>
+            <p>下载次数：47 次</p>
+            <p>图标尺寸：512x512 PX</p>
+            <p>图标大小：9.83 KB</p>
+            <p>图标集：<a href="/series/14288.html" target="_blank" title="59个扁平化图像处理软件中的绘图工具PNG图标">59个扁平化图像处理软件中的绘图工具PNG图标</a></p>            <p class="tag">标签：<a href="/tag/18703.html" target="_blank" title="扁平化">扁平化</a><a href="/tag/2394.html" target="_blank" title="图像处理">图像处理</a><a href="/tag/2767.html" target="_blank" title="绘图">绘图</a><a href="/tag/1991.html" target="_blank" title="工具">工具</a><a href="/tag/245.html" target="_blank" title="软件">软件</a><a href="/so/?q=hand" target="_blank" title="hand">hand</a></p>
+            <p class="tag-add-span"><input type="text" id="tag-size" data-value="标签一,标签二" class="dsize-input tag-size tag-gray" maxlength="200" /><input type="button" class="dsize-down tag-add-button" value="增加标签" onclick="addtag()" /></p>
+            <p class="tag-info"></p>
+        </div>
+    </div>
+</div>
+<div class="wrap-box wrap-bar">
+    <div class="png-bar" style="border-top: none; border-right: none; border-left: none;">
+        <div class="dsize">
+            自定义下载尺寸，宽/高：
+            <span><input type="text" value="" id="dsize" class="dsize-input" maxlength="3" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"><input type="button" class="dsize-down" value="下载" onclick="download()" /></span>
+        </div>
+        <div class="bg" style="float: left;">
+            <a href="javascript:;" title="白色" class="bg-click bg-none cur" data-bg="bg-none"></a>
+            <a href="javascript:;" title="透明" class="bg-click bg-alpha" data-bg="bg-alpha"></a>
+            <a href="javascript:;" title="灰色" class="bg-click bg-gray" data-bg="bg-gray"></a>
+            <a href="javascript:;" title="黑色" class="bg-click bg-black" data-bg="bg-black"></a>
+            <a href="javascript:;" title="蓝色" class="bg-click bg-blue" data-bg="bg-blue"></a>
+            <span>图标背景：</span>
+        </div>
+    </div>
+</div>
+<div class="wrap-box wrap-download">
+        <div class="cbox c125">
+        <p class="thumb"><img src="/thumb/339285?size=125x125"/> </p>
+        <p>512x512 PX</p>
+        <p><a href="/download/339285?size=512x512">PNG</a><a href="/download/339285?size=512x512&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox c125">
+        <p class="thumb"><img src="/thumb/339285?size=125x125"/> </p>
+        <p>256x256 PX</p>
+        <p><a href="/download/339285?size=256x256">PNG</a><a href="/download/339285?size=256x256&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox c125">
+        <p class="thumb"><img src="/thumb/339285?size=125x125"/> </p>
+        <p>128x128 PX</p>
+        <p><a href="/download/339285?size=128x128">PNG</a><a href="/download/339285?size=128x128&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox call">
+        <p class="thumb"><img src="/thumb/339285?size=96x96"/> </p>
+        <p>96x96 PX</p>
+        <p><a href="/download/339285?size=96x96">PNG</a><a href="/download/339285?size=96x96&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox call">
+        <p class="thumb"><img src="/thumb/339285?size=64x64"/> </p>
+        <p>64x64 PX</p>
+        <p><a href="/download/339285?size=64x64">PNG</a><a href="/download/339285?size=64x64&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox call">
+        <p class="thumb"><img src="/thumb/339285?size=32x32"/> </p>
+        <p>32x32 PX</p>
+        <p><a href="/download/339285?size=32x32">PNG</a><a href="/download/339285?size=32x32&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox call">
+        <p class="thumb"><img src="/thumb/339285?size=24x24"/> </p>
+        <p>24x24 PX</p>
+        <p><a href="/download/339285?size=24x24">PNG</a><a href="/download/339285?size=24x24&type=ico">ICO</a> </p>
+    </div>
+        <div class="cbox call">
+        <p class="thumb"><img src="/thumb/339285?size=16x16"/> </p>
+        <p>16x16 PX</p>
+        <p><a href="/download/339285?size=16x16">PNG</a><a href="/download/339285?size=16x16&type=ico">ICO</a> </p>
+    </div>
+    </div>
+<div class="wrap-box rel-png-box">
+    <div class="rel-png-bar"><span><a href="/series/14288.html" target="_blank" title="查看图标集">查看图标集</a></span>同一图标集的其它PNG图标</div>
+    <div class="png-list">
+        <ul>
+                        <li>
+                <p class="png"><a href="/download/339274?size=128x128">PNG</a><a href="/download/339274?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339274.html" title="paint bucket图标,油漆桶图标" target="_blank"><img src="http://pnga.mypng.cn/2224/34-paint-bucket-tool.png.1.png" alt="paint bucket图标,油漆桶图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339275?size=128x128">PNG</a><a href="/download/339275?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339275.html" title="brush图标,刷子图标,笔刷图标" target="_blank"><img src="http://pngb.mypng.cn/2224/6-brush-tool.png.1.png" alt="brush图标,刷子图标,笔刷图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339276?size=128x128">PNG</a><a href="/download/339276?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339276.html" title="pentagon图标,五边形图标" target="_blank"><img src="http://pnga.mypng.cn/2224/39-pentagon.png.1.png" alt="pentagon图标,五边形图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339277?size=128x128">PNG</a><a href="/download/339277?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339277.html" title="polygonal图标,lasso图标,多边形套索图标" target="_blank"><img src="http://pngb.mypng.cn/2224/42-polygonal-lasso-tool.png.1.png" alt="polygonal图标,lasso图标,多边形套索图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339278?size=128x128">PNG</a><a href="/download/339278?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339278.html" title="sharpen图标,锐化图标" target="_blank"><img src="http://pngc.mypng.cn/2224/50-sharpen-tool.png.1.png" alt="sharpen图标,锐化图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339279?size=128x128">PNG</a><a href="/download/339279?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339279.html" title="pattern stamp图标,邮戳模式图标" target="_blank"><img src="http://pnga.mypng.cn/2224/37-pattern-stamp-tool.png.1.png" alt="pattern stamp图标,邮戳模式图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339280?size=128x128">PNG</a><a href="/download/339280?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339280.html" title="single图标,row图标,marquee图标,虚线框图标,横向图标" target="_blank"><img src="http://pngb.mypng.cn/2224/52-single-row-marquee-tool.png.1.png" alt="single图标,row图标,marquee图标,虚线框图标,横向图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339281?size=128x128">PNG</a><a href="/download/339281?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339281.html" title="direct图标,selection图标,直接选择图标" target="_blank"><img src="http://pngb.mypng.cn/2224/16-direct-selection-tool.png.1.png" alt="direct图标,selection图标,直接选择图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339282?size=128x128">PNG</a><a href="/download/339282?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339282.html" title="clone图标,stamp图标,克隆图标,邮戳图标" target="_blank"><img src="http://pnga.mypng.cn/2224/8-clone-stamp-tool.png.1.png" alt="clone图标,stamp图标,克隆图标,邮戳图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339283?size=128x128">PNG</a><a href="/download/339283?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339283.html" title="eyedropper图标,滴管图标" target="_blank"><img src="http://pngc.mypng.cn/2224/20-eyedropper.png.1.png" alt="eyedropper图标,滴管图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339284?size=128x128">PNG</a><a href="/download/339284?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339284.html" title="custom图标,shape图标,自定义形状图标" target="_blank"><img src="http://pnga.mypng.cn/2224/14-custom-shape-tool.png.1.png" alt="custom图标,shape图标,自定义形状图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/339286?size=128x128">PNG</a><a href="/download/339286?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/339286.html" title="background图标,eraser图标,tool图标,背景图标,橡皮擦图标,工具图标" target="_blank"><img src="http://pnga.mypng.cn/2224/4-background-eraser-tool.png.1.png" alt="background图标,eraser图标,tool图标,背景图标,橡皮擦图标,工具图标" /></a>
+                <p class=""></p>
+            </li>
+                    </ul>
+    </div>
+</div>
+<div class="wrap-box rel-png-box">
+    <div class="rel-png-bar"><span><a href="/tag/18703.html" target="_blank" title="更多相关图标">更多</a></span>相关的PNG图标</div>
+    <div class="png-list">
+        <ul>
+                        <li>
+                <p class="png"><a href="/download/100784?size=128x128">PNG</a><a href="/download/100784?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/100784.html" title="phone图标" target="_blank"><img src="http://pngc.mypng.cn/1859/phone-flat.png.1.png" alt="phone图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/101148?size=128x128">PNG</a><a href="/download/101148?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/101148.html" title="刷新图标" target="_blank"><img src="http://pngc.mypng.cn/1859/refresh.png.1.png" alt="刷新图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/101654?size=128x128">PNG</a><a href="/download/101654?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/101654.html" title="car-navigation-flat" target="_blank"><img src="http://pngc.mypng.cn/1859/car-navigation-flat.png.1.png" alt="car-navigation-flat" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/102202?size=128x128">PNG</a><a href="/download/102202?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/102202.html" title="cd图标" target="_blank"><img src="http://pngc.mypng.cn/1859/cd.png.1.png" alt="cd图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/102225?size=128x128">PNG</a><a href="/download/102225?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/102225.html" title="chrome图标" target="_blank"><img src="http://pngc.mypng.cn/1859/chrome-flat.png.1.png" alt="chrome图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/102679?size=128x128">PNG</a><a href="/download/102679?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/102679.html" title="radar-flat" target="_blank"><img src="http://pnga.mypng.cn/1859/radar-flat.png.1.png" alt="radar-flat" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/102774?size=128x128">PNG</a><a href="/download/102774?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/102774.html" title="flipboard-flat" target="_blank"><img src="http://pnga.mypng.cn/1859/flipboard-flat.png.1.png" alt="flipboard-flat" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/103275?size=128x128">PNG</a><a href="/download/103275?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/103275.html" title="对话气泡图标" target="_blank"><img src="http://pnga.mypng.cn/1858/chat.png.1.png" alt="对话气泡图标" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/103596?size=128x128">PNG</a><a href="/download/103596?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/103596.html" title="bookmarks-flat" target="_blank"><img src="http://pngb.mypng.cn/1859/bookmarks-flat.png.1.png" alt="bookmarks-flat" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/103698?size=128x128">PNG</a><a href="/download/103698?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/103698.html" title="firefox浏览器" target="_blank"><img src="http://pngc.mypng.cn/1900/firefox.png.1.png" alt="firefox浏览器" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/103845?size=128x128">PNG</a><a href="/download/103845?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/103845.html" title="home-flat" target="_blank"><img src="http://pngc.mypng.cn/1859/home-flat.png.1.png" alt="home-flat" /></a>
+                <p class=""></p>
+            </li>
+                        <li>
+                <p class="png"><a href="/download/103907?size=128x128">PNG</a><a href="/download/103907?type=ico&size=128x128">ICO</a></p>
+                <a href="/view/103907.html" title="天气图标" target="_blank"><img src="http://pnga.mypng.cn/1859/weather.png.1.png" alt="天气图标" /></a>
+                <p class=""></p>
+            </li>
+                    </ul>
+    </div>
+</div>
+<div class="wrap-box ds-box">
+	<div id="SOHUCS" sid="100-339285"></div>
+</div>
+<script language="javascript">
+    $(".thumb,.view-thumb,.png-list").addClass(lbg);$(".bg-click").removeClass("cur");$(".png-bar ."+lbg).addClass("cur");
+</script>
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cyt2x0PLG',
+conf: 'prod_fb9545b937fe16a9fc975b41bd7bfb67'
+});
+</script>
+<div class="wrap-box wrap-footer">
+    &copy;&nbsp;<a href="/">我的PNG图标网 - MyPNG.cn</a>&nbsp;|&nbsp;<a href="/feedback/">意见反馈</a>&nbsp;|&nbsp;<a href="http://koubei.baidu.com/s/www.mypng.cn" target="_blank">评价</a>&nbsp;&nbsp;粤ICP备15003619号-4
+</div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?99a73d1b3c947e33684895d5e4faf8aa";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+</body>
+</html>

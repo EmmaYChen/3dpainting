@@ -118,6 +118,11 @@
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Util\OVRWaitCursor.cs" />
+    <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusConstants.cs" />
+    <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusMaterial.cs" />
+    <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusMeshes.cs" />
+    <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusObject.cs" />
+    <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusType.cs" />
     <Compile Include="Assets\Script\caster.cs" />
     <Compile Include="Assets\Script\createobject.cs" />
     <Compile Include="Assets\Script\DataController.cs" />
@@ -318,6 +323,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\VoxelBusters\RuntimeSerialization\ReleaseNotes.txt" />
     <None Include="Assets\Oculus\VR\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\PrimitivePlus\Documentation\ReadMe.txt" />
     <None Include="Assets\Shaders\ColorHue.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
