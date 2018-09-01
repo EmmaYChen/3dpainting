@@ -12,4 +12,4 @@ This app is designed in Unity version 2018.1
 This app is specially designed for SUMSUNG Gear VR. With a SUMSUNG (S6,S&,S8) and SUMSUNG Gear VR and a controller, you should be able to enjoy the fun 3D painting game and creating your scene 3D art pieces!
 
 #### Report 
-https://github.com/EmmaYChen/3dpainting/blob/master/3DPainting_Report.pdf
+https://github.com/EmmaYChen/3dpainting/blob/master/report.pdf
